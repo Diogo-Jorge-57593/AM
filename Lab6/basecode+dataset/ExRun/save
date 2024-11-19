@@ -1,0 +1,63 @@
+models = {
+    "logistic_regression": {
+        "model": LogisticRegression(),
+        "space": [
+            Real(1e-5, 1e0, prior="log-uniform", name="C"),  # Regularization strength
+            Integer(100, 1000, name="max_iter"),  # Maximum number of iterations
+            Real(1e-5, 1e-2, name="tol"),  # Tolerance for stopping criteria
+            Categorical(["l2", "none"], name="penalty"),  # Regularization type
+            Categorical(["auto", "balanced"], name="class_weight"),  # Handle class imbalance
+        ]
+    },
+    
+    "naive_bayes": {
+        "model": GaussianNB(),
+        "space": [
+            Real(1e-5, 1e0, prior="log-uniform", name="var_smoothing")  # Smoothing for variance
+        ]
+    },
+    
+    "decision_tree": {
+        "model": DecisionTreeClassifier(),
+        "space": [
+            Integer(1, 1000, name="max_depth"),  # Maximum depth of the tree
+            Integer(1, 100, name="min_samples_split"),  # Minimum samples required to split an internal node
+            Integer(1, 100, name="min_samples_leaf"),  # Minimum samples required at a leaf node
+            Categorical(["best", "random"], name="splitter"),  # Best or random splitting strategy
+            Real(0.0, 1.0, name="max_features"),  # Fraction of features to consider when splitting
+        ]
+    },
+
+    "knn": {
+        "model": KNeighborsClassifier(),
+        "space": [
+            Integer(1, 50, name="n_neighbors"),  # Number of neighbors
+            Real(1e-3, 1e1, prior="log-uniform", name="weights"),  # Weight function for neighbors
+            Categorical(["uniform", "distance"], name="algorithm"),  # Algorithm for computing the nearest neighbors
+            Categorical(["ball_tree", "kd_tree", "brute"], name="metric"),  # Distance metric
+        ]
+    },
+
+    "svm": {
+        "model": SVC(),
+        "space": [
+            Real(1e-3, 1e1, prior="log-uniform", name="C"),  # Regularization parameter
+            Categorical(["linear", "rbf", "poly"], name="kernel"),  # Kernel type
+            Real(1e-4, 1e0, prior="log-uniform", name="gamma"),  # Kernel coefficient
+            Categorical(["scale", "auto"], name="shrinking"),  # Whether to use shrinking heuristic
+        ]
+    },
+
+    "random_forest": {
+        "model": RandomForestClassifier(),
+        "space": [
+            Integer(10, 200, name="n_estimators"),  # Number of trees in the forest
+            Integer(1, 50, name="max_depth"),  # Maximum depth of the tree
+            Integer(2, 10, name="min_samples_split"),  # Minimum samples required to split an internal node
+            Integer(1, 5, name="min_samples_leaf"),  # Minimum samples required at a leaf node
+            Real(0.0, 1.0, name="max_features"),  # Fraction of features to consider when splitting
+            Categorical(["auto", "sqrt", "log2"], name="max_features_mode"),  # Strategy for selecting max features
+            Categorical(["gini", "entropy"], name="criterion")  # Function to measure the quality of a split
+        ]
+    }
+}

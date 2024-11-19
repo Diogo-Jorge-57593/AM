@@ -1,0 +1,8 @@
+CatastroParcelaSubrecinto:
+Id_CatastroParcela;Codigo;Superficie;SuperficieCultivable;Id_Uso;Id;Version
+
+CatastroParcelas:
+Id_Municipio;Poligono;Parcela;Recinto;Descripcion;Superficie;SuperficieCultivable;Id;Version;Id_ReferenciaSIGPAC;Id_TipoParcelaROPAS;CodigoParcelaROPAS;Id_Usuario;Id_Personalizacion;Id_ZonaProteccion;CoeficienteRegadio;Uso
+
+CatastroCodigos:
+Codigo;Nombre;Id;Version;Id_Provincia

@@ -1,0 +1,133 @@
+[
+    {
+        "model": "svm",
+        "params": {},
+        "accuracy": 0.8634999999999999
+    }
+][
+    {
+        "model": "naive_bayes",
+        "params": {},
+        "accuracy": 0.9862142857142857
+    }
+][
+    {
+        "model": "svm",
+        "params": {},
+        "accuracy": 0.8634999999999999
+    }
+][
+    {
+        "model": "knn",
+        "params": {},
+        "accuracy": 0.9730000000000001
+    }
+][
+    {
+        "model": "decision_tree",
+        "params": {},
+        "accuracy": 0.9852142857142857
+    }
+][
+    {
+        "model": "logistic_regression",
+        "params": {},
+        "accuracy": 0.8171428571428571
+    }
+][
+    {
+        "model": "decision_tree",
+        "params": {},
+        "accuracy": 0.9834999999999999
+    }
+][
+    {
+        "model": "decision_tree",
+        "params": {},
+        "accuracy": 0.9785
+    }
+][
+    {
+        "model": "logistic_regression",
+        "params": {},
+        "accuracy": 0.8171428571428571
+    }
+][
+    {
+        "model": "knn",
+        "params": {},
+        "accuracy": 0.9730000000000001
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9989285714285714
+    }
+][
+    {
+        "model": "naive_bayes",
+        "params": {},
+        "accuracy": 0.9862142857142857
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9984999999999999
+    }
+][
+    {
+        "model": "decision_tree",
+        "params": {},
+        "accuracy": 0.9841428571428572
+    }
+][
+    {
+        "model": "knn",
+        "params": {},
+        "accuracy": 0.9730000000000001
+    }
+][
+    {
+        "model": "logistic_regression",
+        "params": {},
+        "accuracy": 0.8171428571428571
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9985714285714286
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9986428571428572
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9988571428571429
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9983571428571428
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9989285714285716
+    }
+][
+    {
+        "model": "random_forest",
+        "params": {},
+        "accuracy": 0.9985714285714286
+    }
+]

@@ -1,0 +1,6 @@
+
+* Initially ChatGPT spoke about 12 important lessons but was only able to transcribe 10, even having more words to complete it (448/500) - Lost a lot of information
+
+* The models fails to inform that the report focuses only on "classification" models, which are the most common - Lost some important context
+
+* The model re-wrote the name of the main chapters, often losing meaning. Ex: Overfitting has many faces -> Overfitting - Simplified 
