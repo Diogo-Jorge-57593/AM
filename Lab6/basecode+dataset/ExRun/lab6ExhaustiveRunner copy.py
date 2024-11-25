@@ -39,14 +39,13 @@ def objective(trial):
     
     if model_name == 'logistic_regression':
         C = trial.suggest_float('logistic_C', 1e-5, 1e5, log=True)
-        solver = trial.suggest_categorical('logistic_solver', ['liblinear', 'lbfgs'])
+        solver = trial.suggest_categorical('logistic_solver', ['liblinear'])
         model = LogisticRegression(C=C, solver=solver, max_iter=10000)
         features = f"C={C}, solver={solver}"
-        print(features)
     
     # Model 2: Naive Bayes
     elif model_name == 'naive_bayes':
-        var_smoothing = trial.suggest_loguniform('nb_var_smoothing', 1e-12, 1e-2)
+        var_smoothing = trial.suggest_float('nb_var_smoothing', 1e-12, 1e-2, log=True)
         model = GaussianNB(var_smoothing=var_smoothing)
         features = f"var_smoothing={var_smoothing}"
 
@@ -66,7 +65,7 @@ def objective(trial):
 
     # Model 5: Support Vector Machine (SVM)
     elif model_name == 'svm':
-        C = trial.suggest_loguniform('svm_C', 1e-5, 1e5)
+        C = trial.suggest_float('svm_C', 1e-5, 1e5, log=True)
         kernel = trial.suggest_categorical('svm_kernel', ['linear', 'rbf'])
         gamma = trial.suggest_categorical('svm_gamma', ['scale', 'auto'])
         model = SVC(C=C, kernel=kernel, gamma=gamma)

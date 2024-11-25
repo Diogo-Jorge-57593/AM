@@ -8,9 +8,9 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "C:\\Users\\a932443\\OneDrive - Eviden\\Desktop\\Uni\\AM\\Lab6\\basecode+dataset\\ExRun\\lab6ExhaustiveRunner.py",
+            "program": "C:\\Users\\diogo\\Documents\\GitHub\\AM\\Lab6\\basecode+dataset\\ExRun\\RandomForestExhaustiveRunner.py",
             "console": "integratedTerminal",
-            "cwd": "C:\\Users\\a932443\\OneDrive - Eviden\\Desktop\\Uni\\AM\\Lab6\\basecode+dataset\\ExRun"
+            "cwd": "C:\\Users\\diogo\\Documents\\GitHub\\AM\\Lab6\\basecode+dataset\\ExRun"
         }
     ]
 }W
