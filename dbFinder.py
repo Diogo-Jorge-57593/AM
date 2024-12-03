@@ -2,8 +2,8 @@ from collections import defaultdict
 import optuna
 
 # Setup study
-study_name = 'lg_optimization_perturbed'
-db_url = f'sqlite:///lg_study_perturbed.db'
+study_name = 'forest_optimization'
+db_url = f'sqlite:///forest_study.db'
 study = optuna.create_study(direction='maximize', storage=db_url, study_name=study_name, load_if_exists=True)
 
 # Fetch all completed trials

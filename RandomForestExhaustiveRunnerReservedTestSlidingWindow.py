@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score, train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, f1_score, make_scorer
 from numpy.typing import NDArray
 import pickle
 import optuna
@@ -18,23 +18,32 @@ def create_sliding_windows(data, labels, window_size, step=1):
 def onehot2cat(y: NDArray) -> NDArray:
     return np.argmax(y, axis=1)
 
-# Load the original training dataset
-fnt_train = 'wdt-train.pickle'
-with open(fnt_train, "rb") as f:
-    test_data = pickle.load(f)
-X_train = test_data['X']
-y_train = test_data['y']
+def loadDataset(fn:str, toCat:bool=False) -> NDArray:
+    '''load dataset'''
+    with open(fn, 'rb') as f:
+        data = pickle.load(f)
+        
+    X = data['X'] 
+    if toCat: y = onehot2cat(data['Y'])
+    else:     y = data['Y'] 
+    
+    return X, y
 
-# Load the perturbed test dataset
-fnt_test_perturbed = 'wdt-test-perturbed.pickle'
-with open(fnt_test_perturbed, "rb") as f:
-    test_data = pickle.load(f)
-X_test_perturbed = test_data['X']
-y_test_perturbed = test_data['y']
+fnt = 'wtdt-part.pickle'
+X, y = loadDataset(fnt, toCat=True)
+
+class_0_indices = np.where(y == 0)[0]  # Get all indices of class 0
+class_0_samples = X[class_0_indices]  # Extract all samples of class 0
+perturbed_samples = class_0_samples + np.random.normal(0, 0.1, class_0_samples.shape)  # Add noise
+X[class_0_indices] = perturbed_samples  # Replace original samples with perturbed versions
+
+
+print(X.shape)
 
 # Objective function for Optuna
 def objective(trial):
     window_size = trial.suggest_int("window_size", 2, 50)
+    step = trial.suggest_int("step", 1, 10)
     n_estimators = trial.suggest_int("n_estimators", 1, 500)  # Number of trees
     criterion = trial.suggest_categorical("criterion", ["gini", "entropy", "log_loss"])  # Criterion for splitting
     max_depth = trial.suggest_int("max_depth", 1, 500, log=True)  # Max depth
@@ -46,7 +55,7 @@ def objective(trial):
     min_impurity_decrease = trial.suggest_float("min_impurity_decrease", 0.0, 0.5)  # Min impurity decrease
     bootstrap = trial.suggest_categorical("bootstrap", [True, False])  # Bootstrap samples
     oob_score = trial.suggest_categorical("oob_score", [False, True])  # Out-of-bag score
-    class_weight = trial.suggest_categorical("class_weight", ["balanced", "balanced_subsample", None])  # Class weights
+    weight_0 = trial.suggest_int("weight_0", 1, 500)  # Class weights
     ccp_alpha = trial.suggest_float("ccp_alpha", 0.0, 0.1)  # Complexity parameter for pruning
     max_samples = trial.suggest_float("max_samples", 0.1, 1.0) if bootstrap else None  # Max samples for bootstrap
 
@@ -66,26 +75,22 @@ def objective(trial):
         min_impurity_decrease=min_impurity_decrease,
         bootstrap=bootstrap,
         oob_score=oob_score,
-        class_weight=class_weight,
+        class_weight = {0: weight_0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0},
         ccp_alpha=ccp_alpha,
         max_samples=max_samples,
         random_state=42
     )
 
     # Generate sliding windows for training and testing
-    X_train_windows, y_train_windows = create_sliding_windows(X_train, y_train, window_size)
-    X_test_windows, y_test_windows = create_sliding_windows(X_test_perturbed, y_test_perturbed, window_size)
+    X_windows, y_windows = create_sliding_windows(X, y, window_size, step=step)
 
-    model.fit(X_train_windows, y_train_windows)
+    f1_scorer = make_scorer(f1_score, average='weighted')
+    scores = cross_val_score(model, X_windows, y_windows, cv=5, scoring=f1_scorer)
 
-    # Predict and evaluate
-    y_pred = model.predict(X_test_windows)
-    overall_accuracy = accuracy_score(y_test_windows, y_pred)
-
-    return overall_accuracy 
+    return scores.mean() 
 
 # Persistent storage
-storage_name = "sqlite:///forest_study_perturbed_window.db"
+storage_name = "sqlite:///forest_study_perturbed_window_weighted.db"
 
 # Create or load the study
 study = optuna.create_study(

@@ -1,0 +1,91 @@
+[
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 45.79826226287835,
+            "kernel": "sigmoid",
+            "coef0": 0.9807909491239231,
+            "max_iter": 211,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:23:34"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 4.599302073282108,
+            "kernel": "rbf",
+            "max_iter": 79,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:24:07"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 51.943512244707016,
+            "kernel": "rbf",
+            "max_iter": 96,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:32:02"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 15.682566046936898,
+            "kernel": "rbf",
+            "max_iter": 138,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:34:32"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 0.07938415731079503,
+            "kernel": "rbf",
+            "max_iter": 157,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:41:36"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 21.86917928274791,
+            "kernel": "rbf",
+            "max_iter": 162,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:46:17"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 17.990304464008535,
+            "kernel": "rbf",
+            "max_iter": 163,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:47:44"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 58.12963412162016,
+            "kernel": "rbf",
+            "max_iter": 219,
+            "gamma": "scale"
+        },
+        "timestamp": "2024-12-02 11:53:38"
+    }
+]
