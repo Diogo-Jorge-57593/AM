@@ -27,7 +27,7 @@ fnt = 'wtdt-part.pickle'
 X, y = loadDataset(fnt, toCat=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-def create_advanced_windows(data, labels, window_size, step=1):
+def create_sliding_windows(data, labels, window_size, step=1):
     X_windows = []
     y_windows = []
     for i in range(0, len(data) - window_size + 1, step):
