@@ -87,5 +87,1499 @@
             "gamma": "scale"
         },
         "timestamp": "2024-12-02 11:53:38"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 48,
+            "step": 6,
+            "n_estimators": 102,
+            "max_depth": 4,
+            "max_features": "sqrt",
+            "min_samples_split": 100,
+            "min_samples_leaf": 23
+        },
+        "timestamp": "2024-12-03 23:58:18"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 50,
+            "step": 1,
+            "n_estimators": 1,
+            "max_depth": 243,
+            "max_features": null,
+            "min_samples_split": 100,
+            "min_samples_leaf": 36
+        },
+        "timestamp": "2024-12-04 00:11:18"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 50,
+            "step": 1,
+            "n_estimators": 19,
+            "max_depth": 424,
+            "max_features": null,
+            "min_samples_split": 100,
+            "min_samples_leaf": 37
+        },
+        "timestamp": "2024-12-04 02:01:31"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 50,
+            "step": 1,
+            "n_estimators": 10,
+            "max_depth": 435,
+            "max_features": null,
+            "min_samples_split": 65,
+            "min_samples_leaf": 37
+        },
+        "timestamp": "2024-12-04 02:54:05"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 10,
+            "step": 1,
+            "n_estimators": 6,
+            "max_depth": 239,
+            "max_features": null,
+            "min_samples_split": 65,
+            "min_samples_leaf": 39
+        },
+        "timestamp": "2024-12-04 09:47:31"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 12,
+            "step": 4,
+            "n_estimators": 36,
+            "max_depth": 204,
+            "max_features": null,
+            "min_samples_split": 58,
+            "min_samples_leaf": 43
+        },
+        "timestamp": "2024-12-04 10:26:44"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 11,
+            "step": 8,
+            "n_estimators": 277,
+            "max_depth": 203,
+            "max_features": "log2",
+            "min_samples_split": 87,
+            "min_samples_leaf": 50
+        },
+        "timestamp": "2024-12-04 11:18:43"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 14,
+            "step": 10,
+            "n_estimators": 206,
+            "max_depth": 172,
+            "max_features": "sqrt",
+            "min_samples_split": 40,
+            "min_samples_leaf": 30
+        },
+        "timestamp": "2024-12-04 11:19:05"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 13,
+            "step": 8,
+            "n_estimators": 213,
+            "max_depth": 5,
+            "max_features": "log2",
+            "min_samples_split": 64,
+            "min_samples_leaf": 42
+        },
+        "timestamp": "2024-12-04 11:19:25"
+    },
+    {
+        "model_name": "RandomForest",
+        "best_params": {
+            "window_size": 17,
+            "step": 9,
+            "n_estimators": 92,
+            "max_depth": 126,
+            "max_features": null,
+            "min_samples_split": 33,
+            "min_samples_leaf": 11
+        },
+        "timestamp": "2024-12-04 11:33:11"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 78465.74106174018,
+            "max_iter": 246,
+            "penalty": null,
+            "solver": "lbfgs",
+            "tol": 0.0737013358832343,
+            "fit_intercept": false,
+            "class_weight": null,
+            "warm_start": false
+        },
+        "timestamp": "2024-12-04 16:14:28"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "C": 7734051790.600758,
+            "max_iter": 251,
+            "penalty": null,
+            "solver": "lbfgs",
+            "tol": 2.145189413056446e-05,
+            "fit_intercept": true,
+            "class_weight": null,
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 16:14:30"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 45168.810637975585,
+            "max_iter": 497,
+            "penalty": "l2",
+            "solver": "newton-cg",
+            "tol": 0.011387147516355388,
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 16:14:43"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 482.5555110957292,
+            "max_iter": 396,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 7.425372479412006e-05,
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "warm_start": false
+        },
+        "timestamp": "2024-12-04 16:16:14"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 64.54332978526813,
+            "max_iter": 416,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 8.986257982150055e-05,
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "warm_start": false
+        },
+        "timestamp": "2024-12-04 16:16:45"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 1.2020161216022949,
+            "max_iter": 350,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.002651556134359604,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": false
+        },
+        "timestamp": "2024-12-04 16:23:06"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 112.00713423772733,
+            "max_iter": 495,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0012102921684586634,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 17:20:37"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 175.306190458881,
+            "max_iter": 500,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0013650538306059408,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 17:28:46"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 2115.7783021437217,
+            "max_iter": 500,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0014472571751113295,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 17:37:30"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 9293.753500725794,
+            "max_iter": 192,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0004310987423815293,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 18:06:13"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 156908.4300995357,
+            "max_iter": 194,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0002820582885366003,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 18:17:36"
+    },
+    {
+        "model_name": "Logistic Regression",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "C": 13970.80369662563,
+            "max_iter": 167,
+            "penalty": "l2",
+            "solver": "liblinear",
+            "tol": 0.0015288662535226987,
+            "fit_intercept": false,
+            "class_weight": "balanced",
+            "warm_start": true
+        },
+        "timestamp": "2024-12-04 18:37:58"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "gini",
+            "splitter": "best",
+            "max_depth": 181,
+            "min_samples_split": 6,
+            "min_samples_leaf": 16,
+            "min_weight_fraction_leaf": 0.0917751483674017,
+            "max_features": null,
+            "max_leaf_nodes": 175,
+            "min_impurity_decrease": 0.06976983259415259,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.08585665959391586
+        },
+        "timestamp": "2024-12-04 23:31:40"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "gini",
+            "splitter": "random",
+            "max_depth": 18,
+            "min_samples_split": 15,
+            "min_samples_leaf": 12,
+            "min_weight_fraction_leaf": 0.19696285806144254,
+            "max_features": "sqrt",
+            "max_leaf_nodes": 44,
+            "min_impurity_decrease": 0.12276877654072443,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.10904895806181614
+        },
+        "timestamp": "2024-12-04 23:31:54"
+    },
+    {
+        "model_name": "SVM-FOR ENSEMBLE",
+        "best_params": {
+            "criterion": "gini",
+            "splitter": "random",
+            "max_depth": 70,
+            "min_samples_split": 9,
+            "min_samples_leaf": 14,
+            "min_weight_fraction_leaf": 0.1737315629298552,
+            "max_features": "log2",
+            "max_leaf_nodes": 453,
+            "min_impurity_decrease": 0.22171260752189725,
+            "class_weight": null,
+            "ccp_alpha": 0.42173077745301313
+        },
+        "timestamp": "2024-12-04 23:32:08"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "entropy",
+            "splitter": "best",
+            "max_depth": 365,
+            "min_samples_split": 5,
+            "min_samples_leaf": 11,
+            "min_weight_fraction_leaf": 0.2585537967349833,
+            "max_features": null,
+            "max_leaf_nodes": 489,
+            "min_impurity_decrease": 0.3749602524155745,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.4877264600641139
+        },
+        "timestamp": "2024-12-04 23:34:48"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "entropy",
+            "splitter": "best",
+            "max_depth": 3,
+            "min_samples_split": 15,
+            "min_samples_leaf": 18,
+            "min_weight_fraction_leaf": 0.08268740382536904,
+            "max_features": null,
+            "max_leaf_nodes": 411,
+            "min_impurity_decrease": 0.30380941303661363,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.26518376753359096
+        },
+        "timestamp": "2024-12-04 23:35:11"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 4,
+            "min_samples_split": 16,
+            "min_samples_leaf": 20,
+            "min_weight_fraction_leaf": 0.0012114977489439127,
+            "max_features": null,
+            "max_leaf_nodes": 199,
+            "min_impurity_decrease": 0.37748203372362205,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.127699325682678
+        },
+        "timestamp": "2024-12-04 23:35:25"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 31,
+            "min_samples_split": 16,
+            "min_samples_leaf": 7,
+            "min_weight_fraction_leaf": 0.012590650287347847,
+            "max_features": "log2",
+            "max_leaf_nodes": 171,
+            "min_impurity_decrease": 0.012110417977184762,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.1122485526054548
+        },
+        "timestamp": "2024-12-04 23:35:42"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 80,
+            "min_samples_split": 16,
+            "min_samples_leaf": 1,
+            "min_weight_fraction_leaf": 0.20779150595931897,
+            "max_features": "log2",
+            "max_leaf_nodes": 215,
+            "min_impurity_decrease": 0.11747914200171672,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.1570332674047571
+        },
+        "timestamp": "2024-12-04 23:35:57"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 15,
+            "min_samples_split": 13,
+            "min_samples_leaf": 7,
+            "min_weight_fraction_leaf": 0.030742445065777647,
+            "max_features": "log2",
+            "max_leaf_nodes": 137,
+            "min_impurity_decrease": 0.0710412609621223,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.07129782930877641
+        },
+        "timestamp": "2024-12-04 23:36:11"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "gini",
+            "splitter": "best",
+            "max_depth": 14,
+            "min_samples_split": 2,
+            "min_samples_leaf": 12,
+            "min_weight_fraction_leaf": 0.10967431736510075,
+            "max_features": "log2",
+            "max_leaf_nodes": 91,
+            "min_impurity_decrease": 0.07825703708421326,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.07192814384591042
+        },
+        "timestamp": "2024-12-04 23:36:27"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "gini",
+            "splitter": "best",
+            "max_depth": 3,
+            "min_samples_split": 3,
+            "min_samples_leaf": 17,
+            "min_weight_fraction_leaf": 0.0326966025476733,
+            "max_features": null,
+            "max_leaf_nodes": 82,
+            "min_impurity_decrease": 0.0314891026748294,
+            "class_weight": "balanced",
+            "ccp_alpha": 0.08658944727551313
+        },
+        "timestamp": "2024-12-04 23:36:47"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 2,
+            "min_samples_split": 18,
+            "min_samples_leaf": 20,
+            "min_weight_fraction_leaf": 0.03692115725998309,
+            "max_features": null,
+            "max_leaf_nodes": 108,
+            "min_impurity_decrease": 0.1510238611653672,
+            "class_weight": null,
+            "ccp_alpha": 0.028789313981736606
+        },
+        "timestamp": "2024-12-04 23:37:08"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "random",
+            "max_depth": 4,
+            "min_samples_split": 12,
+            "min_samples_leaf": 19,
+            "min_weight_fraction_leaf": 0.006199489623774952,
+            "max_features": null,
+            "max_leaf_nodes": 391,
+            "min_impurity_decrease": 0.13207386987272746,
+            "class_weight": null,
+            "ccp_alpha": 0.2298893740420619
+        },
+        "timestamp": "2024-12-04 23:37:22"
+    },
+    {
+        "model_name": "SVM",
+        "best_params": {
+            "criterion": "log_loss",
+            "splitter": "best",
+            "max_depth": 4,
+            "min_samples_split": 15,
+            "min_samples_leaf": 11,
+            "min_weight_fraction_leaf": 0.011936190942179277,
+            "max_features": null,
+            "max_leaf_nodes": 230,
+            "min_impurity_decrease": 0.02155649321250054,
+            "class_weight": null,
+            "ccp_alpha": 0.021984305344556823
+        },
+        "timestamp": "2024-12-04 23:46:04"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.0009697999473162114,
+            "max_iter": 430
+        },
+        "timestamp": "2024-12-04 23:50:53"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00019872183014932494,
+            "max_iter": 388
+        },
+        "timestamp": "2024-12-04 23:51:20"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.002996823217590343,
+            "max_iter": 460
+        },
+        "timestamp": "2024-12-04 23:51:25"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0016725463749992274,
+            "max_iter": 497
+        },
+        "timestamp": "2024-12-04 23:52:44"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0011508283421540937,
+            "max_iter": 453
+        },
+        "timestamp": "2024-12-04 23:53:16"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0011091984981437158,
+            "max_iter": 199
+        },
+        "timestamp": "2024-12-04 23:54:20"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "tanh",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.006107822375505445,
+            "max_iter": 20
+        },
+        "timestamp": "2024-12-05 00:04:56"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.009005120797131625,
+            "max_iter": 207
+        },
+        "timestamp": "2024-12-05 00:05:14"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.002893645936784689,
+            "max_iter": 99
+        },
+        "timestamp": "2024-12-05 00:06:03"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.0006495894852476662,
+            "max_iter": 147
+        },
+        "timestamp": "2024-12-05 00:07:16"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.0006540184982182663,
+            "max_iter": 32
+        },
+        "timestamp": "2024-12-05 00:11:28"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.005692430268989935,
+            "max_iter": 54
+        },
+        "timestamp": "2024-12-05 00:32:27"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "tanh",
+            "solver": "sgd",
+            "learning_rate": "constant",
+            "alpha": 0.0042536333375802786,
+            "max_iter": 29
+        },
+        "timestamp": "2024-12-05 00:34:47"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 417,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.002675023667685331,
+            "max_iter": 422,
+            "momentum": 0.5207013714472237,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.003145221015029149
+        },
+        "timestamp": "2024-12-05 00:57:07"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 363,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0021752336063347545,
+            "max_iter": 387,
+            "momentum": 0.03847843845295845,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.004969885085576735
+        },
+        "timestamp": "2024-12-05 00:59:29"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 660,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.00021922859613200408,
+            "max_iter": 229
+        },
+        "timestamp": "2024-12-05 01:02:17"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 486,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.004112438557848679,
+            "max_iter": 75,
+            "momentum": 0.3925623298879473,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.0006708626109880663
+        },
+        "timestamp": "2024-12-05 01:05:38"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 437,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.002629303687339335,
+            "max_iter": 40,
+            "momentum": 0.07702959213422655,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.0038684485488009426
+        },
+        "timestamp": "2024-12-05 01:09:44"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 413,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0027961805872074967,
+            "max_iter": 117,
+            "momentum": 0.09118292405685831,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.0028239897489912734
+        },
+        "timestamp": "2024-12-05 01:11:43"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 405,
+            "hidden_layer_sizes": [
+                100
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.00292293401105459,
+            "max_iter": 95,
+            "momentum": 0.06557171478213857,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.0033078911362583534
+        },
+        "timestamp": "2024-12-05 01:21:00"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 360,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0033466199217178113,
+            "max_iter": 102,
+            "momentum": 0.47257138058735104,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.002894691895353343
+        },
+        "timestamp": "2024-12-05 01:23:21"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 492,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.003138541158263416,
+            "max_iter": 409,
+            "momentum": 0.5081075060012712,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.0019318166200559795
+        },
+        "timestamp": "2024-12-05 01:25:50"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 776,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0008535538000212855,
+            "max_iter": 30
+        },
+        "timestamp": "2024-12-05 01:31:32"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 762,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0004871049619474527,
+            "max_iter": 34
+        },
+        "timestamp": "2024-12-05 01:32:28"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "None",
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0013753143905679659,
+            "max_iter": 309
+        },
+        "timestamp": "2024-12-05 01:38:46"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 747,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0012178639997284535,
+            "max_iter": 40,
+            "momentum": 0.08660338414675517,
+            "nesterovs_momentum": true,
+            "learning_rate_init": 0.004917432626089466
+        },
+        "timestamp": "2024-12-05 01:38:54"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 701,
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0007012516866957008,
+            "max_iter": 33
+        },
+        "timestamp": "2024-12-05 01:40:15"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 166,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0003672933721575425,
+            "max_iter": 20,
+            "momentum": 0.40611829475272254,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.0005701447707973778
+        },
+        "timestamp": "2024-12-05 01:41:15"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 410,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.001185482167521061,
+            "max_iter": 81
+        },
+        "timestamp": "2024-12-05 01:42:39"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 746,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.00015055577426035567,
+            "max_iter": 81,
+            "momentum": 0.0007018076086881511,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.0067089879182299274
+        },
+        "timestamp": "2024-12-05 01:45:59"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 787,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0009819478225941269,
+            "max_iter": 441
+        },
+        "timestamp": "2024-12-05 01:47:05"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 680,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0005503041546345502,
+            "max_iter": 215
+        },
+        "timestamp": "2024-12-05 01:49:01"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 718,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0011632528323399973,
+            "max_iter": 284,
+            "momentum": 0.23214639066739334,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.002093742909277757
+        },
+        "timestamp": "2024-12-05 01:52:09"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 706,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.00023819052563405714,
+            "max_iter": 460
+        },
+        "timestamp": "2024-12-05 01:55:18"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "None",
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "tanh",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.00039556405796190556,
+            "max_iter": 451
+        },
+        "timestamp": "2024-12-05 01:56:05"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 713,
+            "hidden_layer_sizes": [
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.00012726862654730518,
+            "max_iter": 455
+        },
+        "timestamp": "2024-12-05 01:56:17"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 711,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.0005035448601377763,
+            "max_iter": 414
+        },
+        "timestamp": "2024-12-05 01:58:16"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 716,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00045031881261921693,
+            "max_iter": 411
+        },
+        "timestamp": "2024-12-05 01:58:22"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 729,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00048059434209115574,
+            "max_iter": 428
+        },
+        "timestamp": "2024-12-05 01:58:31"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 711,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.0002950056678999386,
+            "max_iter": 433
+        },
+        "timestamp": "2024-12-05 01:59:05"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 719,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.000665311688324748,
+            "max_iter": 413
+        },
+        "timestamp": "2024-12-05 01:59:30"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 686,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00026757047213698626,
+            "max_iter": 441
+        },
+        "timestamp": "2024-12-05 02:00:06"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 704,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.0002758015141379987,
+            "max_iter": 453
+        },
+        "timestamp": "2024-12-05 02:00:36"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "MinMaxScaler",
+            "feature_selector": "None",
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00039943001541200174,
+            "max_iter": 268
+        },
+        "timestamp": "2024-12-05 02:01:31"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 670,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0018144664900150557,
+            "max_iter": 447
+        },
+        "timestamp": "2024-12-05 02:02:11"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 374,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.000509568375006632,
+            "max_iter": 60
+        },
+        "timestamp": "2024-12-05 02:05:27"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 746,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0006046807546780711,
+            "max_iter": 424
+        },
+        "timestamp": "2024-12-05 02:05:48"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 405,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "sgd",
+            "learning_rate": "adaptive",
+            "alpha": 0.0005864026905036384,
+            "max_iter": 385,
+            "momentum": 0.22063479184924412,
+            "nesterovs_momentum": false,
+            "learning_rate_init": 0.0001271862119457972
+        },
+        "timestamp": "2024-12-05 02:07:42"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 713,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "adaptive",
+            "alpha": 0.0004904722107349543,
+            "max_iter": 101
+        },
+        "timestamp": "2024-12-05 02:09:08"
+    },
+    {
+        "model_name": "Neural",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "PCA",
+            "n_components": 686,
+            "hidden_layer_sizes": [
+                100,
+                50,
+                50
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "learning_rate": "constant",
+            "alpha": 0.00010047296506786934,
+            "max_iter": 349
+        },
+        "timestamp": "2024-12-05 03:06:40"
+    },
+    {
+        "model_name": "KNN",
+        "best_params": {
+            "scaler": "StandardScaler",
+            "feature_selector": "SelectKBest",
+            "k": 448,
+            "n_neighbors": 22,
+            "weights": "uniform",
+            "metric": "euclidean"
+        },
+        "timestamp": "2024-12-05 09:58:59"
     }
 ]

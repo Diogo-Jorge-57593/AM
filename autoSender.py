@@ -40,7 +40,7 @@ try:
     driver.execute_script("arguments[0].style.display = 'block';", file_input)
 
     # Specify the path to your file
-    file_path = 'C:\\Users\\diogo\\Documents\\GitHub\\AM\\T1-SVM.pickle'  # Replace with your file's path
+    file_path = 'C:\\Users\\diogo\\Documents\\GitHub\\AM\\T1-KNearestNeighbors.pickle'  # Replace with your file's path
 
     # Send the file path to the input element
     file_input.send_keys(file_path)
@@ -52,50 +52,6 @@ try:
     )
     print("File uploaded successfully.")
 
-    # Capture live accuracy during model execution
-    live_accuracy = None
-    previous_accuracy = 0.0
-    no_improvement_count = 0  # Tracks how long accuracy has not improved
-    max_no_improvement = 5  # Number of checks without improvement before stopping
-
-    print("Waiting for live accuracy to stabilize...")
-    while True:
-        try:
-            # Locate the live accuracy element
-            accuracy_element = WebDriverWait(driver, 2).until(
-                EC.presence_of_element_located((By.ID, 'acc'))
-            )
-            live_accuracy = float(accuracy_element.text.strip())
-            print(f"Current Live Accuracy: {live_accuracy:.5f}")
-
-            # Check if accuracy improved
-            if live_accuracy > previous_accuracy:
-                previous_accuracy = live_accuracy
-                no_improvement_count = 0  # Reset counter if there is improvement
-            else:
-                no_improvement_count += 1
-                print(f"No improvement detected. Count: {no_improvement_count}")
-
-            # Stop if no improvement for a while
-            if no_improvement_count >= max_no_improvement:
-                print("Accuracy stabilized or no further improvement detected.")
-                break
-
-            # Add a short delay before re-checking
-            time.sleep(1)
-        except Exception as e:
-            print(f"Error while checking live accuracy: {e}")
-            break
-
-    # Save the final accuracy to a log file
-    log_data = {
-        "final_live_accuracy": previous_accuracy,
-        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-    }
-    log_file = "live_accuracy_log.json"
-    with open(log_file, "a") as f:
-        f.write(json.dumps(log_data) + "\n")
-    print(f"Final live accuracy logged to {log_file}.")
 
 finally:
     # Close the browser
